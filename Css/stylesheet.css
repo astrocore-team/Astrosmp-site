@@ -1,7 +1,46 @@
+:root {
+        --main-height: 200vh;
+      }
+body{
+        height:var(--main-height);
+        padding:0px;
+        margin:0px;
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+        overflow-y: scroll;
+}
+body::-webkit-scrollbar {
+        display: none;
+}    
 .navbar {
         overflow: hidden;
         background-color: rgba(51, 51, 51, 0);
         position: sticky;
         position: -webkit-sticky;
         top: 0;
+}
+.background-filter{
+        position:absolute;
+        left:0px;
+        top:0px;
+        width:100vw;
+        height:65vh;
+       background: rgb(24,28,36);
+       background: linear-gradient(360deg, rgba(24,28,36,1) 0%, rgba(24,28,36,0.8869922969187675) 46%, rgba(24,28,36,0.6825105042016807) 95%);
+}
+.background-filter-2{
+        position:absolute;
+        left:0px;
+        top:65vh;
+        width:100vw;
+        height:var(--main-height);
+        background: rgb(24,28,36);
+      
+}
+.top-background{
+        position:absolute;
+        left:0px;
+        top:0px;
+        width:100vw;
+      
 }
