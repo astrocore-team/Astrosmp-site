@@ -154,3 +154,11 @@ body::-webkit-scrollbar {
         font-size:1.6vw;
         color:white;
 }
+iframe {
+        position:absolute;
+        border-radius:10px;
+        left:20px;
+        top:20px;
+        width:94vw;
+        height:73vh;
+}
