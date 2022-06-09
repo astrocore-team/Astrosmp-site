@@ -64,10 +64,21 @@ body{
        opacity:0;
        transition: opacity 0.5s;
 }
-.discord-crate{
+.discord-invite{
         position:absolute;
-        top:25vh;
-        right:15vw;
+        top:18vh;
+        right:8vw;
+        color: #2BBD32;
+        height:10vh;
+        width:10vw;
+}
+.minecraft-invite{
+        position:absolute;
+        top:5vh;
+        left:5vw;
+        color: #2BBD32;
+        height:10vh;
+        width:25vw;
 }
 .title{
         position:absolute;
