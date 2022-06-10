@@ -71,7 +71,6 @@ body{
         color: #2BBD32;
         height:10vh;
         width:6vw;
-        cursor:pointer;
 }
 
 .discord-count{
@@ -203,7 +202,7 @@ body{
         width: 98vw;      
         border-radius:8px;
         column-gap: 20px;
-        height:70vh;
+        height:80vh;
         border-radius: 8px;
 }
       
