@@ -8,9 +8,22 @@ body{
         margin:0px;
         -ms-overflow-style: none;  /* IE and Edge */
         scrollbar-width: none;  /* Firefox */
-        overflow-y: hidden;
+        overflow-y: scroll;
         overflow-x: hidden;
         font-family: 'Open Sans', sans-serif;
+}
+a {
+    text-decoration: none !important;
+    color:white;
+}
+::-webkit-scrollbar {
+    width: 10px;
+}    
+::-webkit-scrollbar-track {
+    background-color: rgb(47, 58, 75);
+}
+::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 6px rgb(0, 0, 0);
 }
 .background-filter{
         position:absolute;
@@ -37,34 +50,54 @@ body{
         width:100vw;
         height:60vh;
 }
-.error{
+.top-title{
     position:absolute;
-    color:white;
-    font-size:16vw;
-    top:0vh;
-    left:50%;
+    left: 50%;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
+    top:3vh;
+    color:white;
+    font-size:5vw;
     margin:0px;
 }
-.page-not-found{
+.navbar{
     position:absolute;
-    color:white;
-    font-size:6vw;
-    top:40vh;
-    left:50%;
+    left: 50%;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
-    margin:0px;
+    top:20vh;
+    width:98vw;
+    height:18vh;
+    border-radius:8px;
+    background-color:rgb(47, 58, 75);
 }
-.back-button{
+.navbar-menu-wrapper {
     position:absolute;
-    left:50%;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
-    top:70vh;
-    width:40vw;
-    height: 10vh;
+    top:25%;
+    left: 4%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 40%;        
+    border-radius:8px;
+    column-gap: 20px;
+    height:10vh;
+    border-radius: 8px;        
+    font-size:1.5vw;
+    text-align: center;
+    line-height: 10vh;
+    color:white;
+}
+.navbar-element {
+    flex: 0%;
+    
+}
+.shop-button{
+    position:absolute;
+    right:30px;
+    top:25%;
+    width:20vw;
+    height: 50%;
     border-radius:15px;
     background-color:#2BBD32;
     border:2px solid #2BBD32;
@@ -76,10 +109,38 @@ body{
     box-shadow: 0px 0px 74px 35px rgba(26, 116, 31,0.93);
     cursor:pointer;
 }
-.back-button:hover {
+.shop-button:hover {
     background-color: #2fa335;
     border:2px solid white;
     -webkit-box-shadow:0px 0px 74px 35px rgba(43, 189, 50,0.93);
     -moz-box-shadow: 0px 0px 74px 35px rgba(43, 189, 50,0.93);
     box-shadow: 0px 0px 74px 35px rgba(43, 189, 50,0.93);
+}
+.title{
+    position:absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    top:43.5vh;
+    color:white;
+    font-size:3.5vw;
+    margin:0px;
+}
+.title-hr{
+    border:2px solid #2BBD32;
+    position:absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    top:40vh;
+    width:65vw;
+}
+.title-hr-2{
+    border:2px solid #2BBD32;
+    position:absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    top:55vh;
+    width:35vw;
 }
