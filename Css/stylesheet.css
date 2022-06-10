@@ -50,25 +50,6 @@ a {
         width:100vw;
         height:60vh;
 }
-.header{
-        position:fixed;
-        left: 0px;
-        top: 0px;
-        width: 100vw;
-        height:15%;
-       z-index:5;
-       transition: height .6s;
-}
-.header1{
-        background-color:#121212;
-        position:absolute;
-        left: 0px;
-        top: 0px;
-        width: 100vw;
-        height:100%;
-       opacity:0;
-       transition: opacity 0.5s;
-}
 .discord-invite{
         position:absolute;
         top:30vh;
