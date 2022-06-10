@@ -112,6 +112,7 @@ a {
 .discord-logo{
         height:9.1185410334347vh;
         width:6.038vw;
+        filter: invert(57%) sepia(95%) saturate(1465%) hue-rotate(77deg) brightness(94%) contrast(81%);
 }
 .title{
         position:absolute;
@@ -283,7 +284,7 @@ a {
 }
 .shop-button{
         position:absolute;
-        right:20px;
+        right:30px;
         top:25%;
         width:20vw;
         height: 50%;
