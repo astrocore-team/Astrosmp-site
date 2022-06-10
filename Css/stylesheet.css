@@ -66,19 +66,59 @@ body{
 }
 .discord-invite{
         position:absolute;
-        top:22vh;
-        right:8vw;
+        top:30vh;
+        right:14vw;
         color: #2BBD32;
         height:10vh;
-        width:10vw;
+        width:6vw;
+        cursor:pointer;
+}
+
+.discord-count{
+        position:absolute;
+        top:-8vh;
+        left:50%;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        background-color:#2BBD32;
+        color:black;
+        width:4vw;
+        height:4vh;
+        text-align:center;
+        line-height: 4vh;
+        font-size:1.5vw;
+        font-weight: bold;
+        border-radius:15px;
 }
 .minecraft-invite{
         position:absolute;
-        top:5vh;
-        left:5vw;
+        top:29vh;
+        left:10vw;
         color: #2BBD32;
-        height:10vh;
-        width:25vw;
+        height:12vh;
+        width:12vh;
+}
+.minecraft-img{
+        height:12vh;
+        border-radius:15px;
+        cursor:pointer;      
+}
+
+.minecraft-count{
+        position:absolute;
+        top:-8vh;
+        left:50%;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        background-color:#2BBD32;
+        color:black;
+        width:4vw;
+        height:4vh;
+        text-align:center;
+        line-height: 4vh;
+        font-size:1.5vw;
+        font-weight: bold;
+        border-radius:15px;
 }
 .title{
         position:absolute;
@@ -110,6 +150,35 @@ body{
         height:60vh;
         border-radius:8px;
         background-color:rgb(47, 58, 75);
+        overflow: hidden;
+}
+.about-image{
+        object-fit: cover;
+        height:60vh;
+        position:absolute;
+        top:0px;
+        left:0px;
+        border-top-left-radius:8px;
+        border-bottom-left-radius:8px;
+}
+.about-title{
+        position:absolute;
+        right: 0vw;
+        width:42vw;
+        text-align:center;
+        top:8vh;
+        color:#2BBD32;
+        font-size:2.5vw;
+        font-weight:bold;            
+}
+.about-text{
+        position:absolute;
+        right: 5vw;
+        width:32vw;
+        text-align:center;
+        top:20vh;
+        color:white;
+        font-size:1.3vw;
 }
 .map{
         position:absolute;
@@ -117,7 +186,7 @@ body{
         left: 50%;
         -webkit-transform: translateX(-50%);
         transform: translateX(-50%);
-        width: 98%;        
+        width: 98vw;        
         height:80vh;
         border-radius: 8px;
         background-color:rgb(47, 58, 75);
@@ -131,7 +200,7 @@ body{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        width: 98%;        
+        width: 98vw;      
         border-radius:8px;
         column-gap: 20px;
         height:70vh;
@@ -173,10 +242,10 @@ body{
         height: 50%;
         border-radius:15px;
         background-color:#2BBD32;
-        border:2px solid white;
+        border:2px solid #2BBD32;
         font-size:1.6vw;
         color:white;
-        transition: background-color 0.3s, box-shadow 0.3s ease-in-out;
+        transition: all 0.3s, box-shadow 0.3s ease-in-out;
         -webkit-box-shadow:0px 0px 74px 35px rgba(26, 116, 31,0.93);
         -moz-box-shadow: 0px 0px 74px 35px rgba(26, 116, 31,0.93);
         box-shadow: 0px 0px 74px 35px rgba(26, 116, 31,0.93);
@@ -184,6 +253,7 @@ body{
 }
 .shop-button:hover {
         background-color: #2fa335;
+        border:2px solid white;
         -webkit-box-shadow:0px 0px 74px 35px rgba(43, 189, 50,0.93);
         -moz-box-shadow: 0px 0px 74px 35px rgba(43, 189, 50,0.93);
         box-shadow: 0px 0px 74px 35px rgba(43, 189, 50,0.93);

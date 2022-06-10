@@ -4,6 +4,7 @@
     <link rel="icon" class="favicon" type="image/jpg" href="Assets/Favicon.jpg">
     <link rel="stylesheet" href="Css/stylesheet.css">
     <script src="https://kit.fontawesome.com/f9d40dbe97.js" crossorigin="anonymous"></script>
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
     <script src='https://cdn.jsdelivr.net/npm/@widgetbot/crate@3' async defer>
         new Crate({
             server: '938550305770057738', // AstroSMP
@@ -24,6 +25,7 @@
         <div id="header" class="header1"></div>
     </header>
     <div class="minecraft-invite">
+        <!--
         <h1>Join us on Minecraft!</h1>
         <h2>Java Edition:</h2>
         <h3>
@@ -33,10 +35,14 @@
         <h3>Port: 25599<br>
             IP: 164.132.219.131 
         </h3>
+        -->
+        <p id="serverPlayerCount" class="minecraft-count">0</p>
+    <span class="iconify minecraft-img" data-icon="mdi:minecraft" data-width="80" data-height="60"></span>
     </div>
     <h1 class="title">AstroSMP</h1>
     <div onclick="window.location.replace('https:/\/discord.gg/taXju9tqp6');" class="discord-invite">
-        <i style="cursor:pointer" class="fa-brands fa-discord fa-5x"></i>
+        <p id="discordUserCount" class="discord-count">0</p>
+        <i class="fa-brands fa-discord fa-4x"></i>
     </div>
     <div class="navbar">
         <div class="navbar-menu-wrapper">
@@ -56,6 +62,9 @@
         <button class="shop-button">AstroSMP Shop</button>
     </div>
     <div class="big-block">
+        <img class="about-image" src="Assets\about.png">
+        <p class="about-title">About Us</p>
+        <p class="about-text">This is a bunch of random text that I am using as a placeholder. Please replace this text with a paragraph length-ish of text. It gets really boring typing this all out. Anyway, you should totally join this Minecraft server.</p>
     </div>
     <div class="map">
         <iframe src="http://164.132.219.131:8015/"></iframe>
