@@ -218,8 +218,7 @@ a {
     transform: translateX(-50%);
 }
 .voting{
-    overflow:hidden; 
-    pointer-events: none;
+    overflow:hidden;
     position:absolute;
     top:80vh;
     left:5vw;
