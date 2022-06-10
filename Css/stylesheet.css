@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 :root {
-        --main-height: 300vh;
+        --main-height: 310vh;
       }
 body{
         height:var(--main-height);
@@ -36,7 +36,7 @@ body{
         top:60vh;
         width:100vw;
         height:var(--main-height);               
-        background: rgb(24,28,36);
+        background: rgb(24, 28, 36);
       
 }
 .top-background{
@@ -100,7 +100,11 @@ body{
 .minecraft-img{
         height:12vh;
         border-radius:15px;
-        cursor:pointer;      
+        cursor:pointer;    
+        position:absolute; 
+        left:50%;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%); 
 }
 
 .minecraft-count{
@@ -159,6 +163,7 @@ body{
         left:0px;
         border-top-left-radius:8px;
         border-bottom-left-radius:8px;
+        border-right: .4vw solid #2BBD32;
 }
 .about-title{
         position:absolute;
@@ -202,14 +207,58 @@ body{
         width: 98vw;      
         border-radius:8px;
         column-gap: 20px;
-        height:80vh;
+        height:90vh;
         border-radius: 8px;
+        overflow: hidden;
 }
       
 .column {
         flex: 0%;
         border-radius: 8px;
         background-color:rgb(47, 58, 75);
+        overflow: hidden;
+}
+.column-picture{
+        object-fit: cover;
+        height:40vh;
+        position:absolute;
+        top:0px;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+}
+.horizontal-hr{
+        border: .4vh solid #2BBD32;
+        background-color:#2BBD32;
+        width:50vw;
+        position:absolute;
+        top:39vh;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+}
+.column-title{
+        position:absolute;
+        top:42vh;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        width:42vw;
+        text-align:center;
+        color:#2BBD32;
+        font-size:2.5vw;
+        font-weight:bold;    
+}
+.column-text{
+        position:absolute;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        width:25vw;
+        text-align:center;
+        top:56vh;
+        color:white;
+        font-size:1.3vw;
 }
 .navbar-menu-wrapper {
         position:absolute;
@@ -264,4 +313,19 @@ iframe {
         top:20px;
         width:94vw;
         height:73vh;
+}
+footer{
+        position:absolute;
+        bottom:-275vh;
+        left:0px;
+        width:100vw;
+        height:55vh;
+        background-color:#10141c;
+}
+.bottom-bar{
+        width:100vw;
+        height:12vh;
+        position:absolute;
+        bottom:0vh;
+        background-color:black;
 }
