@@ -47,7 +47,8 @@ a {
         position:absolute;
         left:0px;
         top:0px;
-        width:100vw;        
+        width:100vw;
+        height:60vh;
 }
 .header{
         position:fixed;
@@ -126,6 +127,10 @@ a {
         font-size:1.5vw;
         font-weight: bold;
         border-radius:15px;
+}
+.discord-logo{
+        height:9.1185410334347vh;
+        width:6.038vw;
 }
 .title{
         position:absolute;
