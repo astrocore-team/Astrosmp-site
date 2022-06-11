@@ -2,7 +2,7 @@
 :root {
         --main-height: 150vh;
       }
-body{
+      body{
         height:var(--main-height);
         padding:0px;
         margin:0px;
@@ -11,6 +11,17 @@ body{
         overflow-y: scroll;
         overflow-x: hidden;
         font-family: 'Open Sans', sans-serif;
+        background: rgb(24,28,36);
+        transition:all 1s;
+        transition:all 1s;
+        opacity:0;
+        pointer-events: none;
+
+}
+body.loaded{
+        transition:all 1s;
+        opacity:1;
+        pointer-events: all;
 }
 a {
     text-decoration: none !important;
