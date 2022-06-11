@@ -9,15 +9,20 @@
         new Crate({
             server: '938550305770057738', // AstroSMP
             channel: '939088708790022164' // #💬-general
-        })
+        },1000)
     </script>
     <script src="Js/Main.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AstroSMP</title>
+    <script>
+        setTimeout(() =>{
+            document.body.className += ' loaded';
+        })
+    </script>
 </head>
-<body onload="document.body.className += ' loaded';">
+<body>
     <image class="top-background" src="Assets/background.png">
         <div class="background-filter-2"></div>
     <div class="background-filter"></div>
@@ -47,7 +52,7 @@
                 <a onclick="document.body.className -= ' loaded';" href="index.html" style="cursor:pointer;"><b>Home</b></a>              
             </div>
             <div class="navbar-element">
-                <a onclick="document.body.className -= ' loaded';" style="cursor:pointer;"><b>Rules</b></a>
+                <a onclick="document.body.className -= ' loaded';" href="rules.html" style="cursor:pointer;"><b>Rules</b></a>
             </div>
             <div class="navbar-element">
                 <a onclick="document.body.className -= ' loaded';" href="voting.html" style="cursor:pointer;"><b>Voting</b></a>
