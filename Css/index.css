@@ -477,11 +477,11 @@ footer{
         -ms-animation: fadeIn linear 2s;
 }
 .minecraft-count {
-        animation: fadeIn linear 2s;
-        -webkit-animation: fadeIn linear 2s;
-        -moz-animation: fadeIn linear 2s;
-        -o-animation: fadeIn linear 2s;
-        -ms-animation: fadeIn linear 2s;
+        animation: fadeIn linear 4s;
+        -webkit-animation: fadeIn linear 4s;
+        -moz-animation: fadeIn linear 4s;
+        -o-animation: fadeIn linear 4s;
+        -ms-animation: fadeIn linear 4s;
 }
 .discord-count {
         animation: fadeIn linear 2s;
