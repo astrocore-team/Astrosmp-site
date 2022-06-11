@@ -175,6 +175,7 @@ a {
 .about-image{
         object-fit: cover;
         height:60vh;
+        width:55vw;
         position:absolute;
         top:0px;
         left:0px;
