@@ -11,6 +11,13 @@ body{
         overflow-y: scroll;
         overflow-x: hidden;
         font-family: 'Open Sans', sans-serif;
+        background: rgb(24,28,36);
+        transition:all 1s;
+}
+body:active{
+        transition:all 1s;
+        opacity:0;
+        pointer-events: none;
 }
 a {
         text-decoration: none !important;
