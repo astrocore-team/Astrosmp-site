@@ -135,6 +135,7 @@ a {
     transform: translateX(-50%);
     top:40vh;
     width:65vw;
+    border-radius: 50px;
 }
 .title-hr-2{
     border:2px solid #2BBD32;
@@ -144,6 +145,7 @@ a {
     transform: translateX(-50%);
     top:55vh;
     width:35vw;
+    border-radius: 50px;
 }
 .subtitle{
     color:white;
