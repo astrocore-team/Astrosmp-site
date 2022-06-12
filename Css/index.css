@@ -252,6 +252,11 @@ a {
         transition: all .4s;
         cursor:pointer;
 }
+.column:hover {
+        z-index:3 !important;
+        transition: margin-top .35s !important;
+        margin-top:-.8vh !important;
+}
 .glow:hover{
         -webkit-box-shadow:0px 0px 74px 35px rgba(43, 189, 50,0.43);
         -moz-box-shadow: 0px 0px 74px 35px rgba(43, 189, 50,0.43);
