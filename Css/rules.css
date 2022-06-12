@@ -202,8 +202,9 @@ a {
     position:absolute;
     top:0vh;
     width:75vw;
+    height:20vh;
     text-align:left;
-    font-size:1.6vw;
+    font-size:2vw;
     background-color:rgb(47, 58, 75);
     padding:2vw;
     border-radius:8px;
@@ -247,7 +248,7 @@ a {
     width:60vw;
     height:145vh;
     color:white;
-    font-size:2vw;
+    font-size:3.8vh;
 }
 .rules-wrapper{
     overflow:hidden;
