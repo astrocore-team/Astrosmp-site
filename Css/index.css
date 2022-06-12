@@ -317,6 +317,7 @@ a {
         color:white;
 } 
 .navbar-element {
+        transition: all .4s;
         flex: 0%;
         border-bottom:.8vh solid rgba(43, 189, 50,.0);
 }

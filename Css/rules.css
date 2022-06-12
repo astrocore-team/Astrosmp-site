@@ -100,6 +100,7 @@ a {
     color:white;
 }
 .navbar-element {
+    transition: all .4s;
     flex: 0%;
     border-bottom:.8vh solid rgba(43, 189, 50,.0);
 }
@@ -262,4 +263,109 @@ a {
     -webkit-box-shadow:0px 0px 74px 35px rgba(43, 189, 50,0.23);
     -moz-box-shadow: 0px 0px 74px 35px rgba(43, 189, 50,0.23);
     box-shadow: 0px 0px 74px 35px rgba(43, 189, 50,0.23);
+}
+footer{
+    position:absolute;
+    bottom:-205vh;
+    left:0px;
+    width:100vw;
+    height:40vh;
+    background-color:#10141c;
+}
+.footer-column-element {
+    position:absolute;
+    top:0vh;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100vw;      
+    column-gap: 10px;
+    height:40vh;
+    overflow: hidden;
+    border-top: .4vh solid #2BBD32;
+}
+  
+.footer-column {
+    flex: 0%;
+    overflow: hidden;
+}
+.story-title{
+    text-align:left;
+    position:absolute;
+    left:3vw;
+    color:#2BBD32;
+    font-size:2.3vw;
+    font-weight:bold;  
+    margin-bottom: 40px;  
+}
+.story-text{
+    position:absolute;
+    width:22vw;
+    text-align:left;
+    top:12vh;
+    left:3vw;
+    color:white;
+    font-size:1.3vw;
+}
+.social-title{
+    text-align:center;
+    color:#2BBD32;
+    font-size:2.3vw;
+    font-weight:bold;    
+    line-height: 3vh;
+}
+.social-hr{
+    width:10vw;
+    border-color: #303c4c;
+    line-height: 1vh;
+}
+.social-text{
+    line-height: 1vh;
+    text-align:center;
+    color:white;
+    font-size:1.3vw;
+}
+.support-title{
+    text-align:left;
+    position:absolute;
+    right:13.5vw;
+    color:#2BBD32;
+    font-size:2.3vw;
+    font-weight:bold;    
+}
+.support-text{
+    position:absolute;
+    width:22vw;
+    text-align:left;
+    top:12vh;
+    right:3vw;
+    color:white;
+    font-size:1.3vw;
+}
+.support-shop-button{
+    position:absolute;
+    right:5vw;
+    top:28vh;
+    width:20vw;
+    height: 20%;
+    border-radius:15px;
+    background-color:#2BBD32;
+    border:2px solid #2BBD32;
+    font-size:1.6vw;
+    color:white;
+    transition: all 0.3s, box-shadow 0.3s ease-in-out;
+    -webkit-box-shadow:0px 0px 74px 35px rgba(26, 116, 31,0.93);
+    -moz-box-shadow: 0px 0px 74px 35px rgba(26, 116, 31,0.93);
+    box-shadow: 0px 0px 74px 35px rgba(26, 116, 31,0.93);
+    cursor:pointer;
+}
+.support-shop-button:hover {
+    background-color: #2fa335;
+    border:2px solid white;
+    -webkit-box-shadow:0px 0px 74px 35px rgba(43, 189, 50,0.93);
+    -moz-box-shadow: 0px 0px 74px 35px rgba(43, 189, 50,0.93);
+    box-shadow: 0px 0px 74px 35px rgba(43, 189, 50,0.93);
 }
