@@ -235,7 +235,7 @@ a {
     line-height:8vh;
     width:30vw;
     text-align:left;
-    font-size:2vw;
+    font-size:2vh;
     left: 50%;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
