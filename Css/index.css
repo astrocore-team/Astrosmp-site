@@ -358,6 +358,14 @@ iframe {
         width:94vw;
         height:73vh;
 }
+.Dynmap-image {
+        position:absolute;
+        border-radius:10px;
+        left:20px;
+        top:20px;
+        width:94vw;
+        height:73vh;
+}
 footer{
         position:absolute;
         bottom:-260vh;
