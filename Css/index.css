@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 :root {
-        --main-height: 200vh;
+        --main-height: 300vh;
       }
 body{
         height:var(--main-height);
@@ -206,7 +206,6 @@ a {
         font-size:1.3vw;
 }
 .map-block{
-        display:none;
         position:absolute;
         top:140vh;
         left: 50%;
@@ -230,7 +229,7 @@ a {
 }
 .column-element {
         position:absolute;
-        top:140vh;
+        top:225vh;
         left: 50%;
         -webkit-transform: translateX(-50%);
         transform: translateX(-50%);
@@ -369,7 +368,7 @@ iframe {
 }
 footer{
         position:absolute;
-        bottom:-175vh;
+        bottom:-260vh;
         left:0px;
         width:100vw;
         height:40vh;
