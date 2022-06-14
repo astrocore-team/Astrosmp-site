@@ -1,15 +1,24 @@
-  async function serverCount(url){
-    const response = await fetch(url);
-    var data = await response.json();
-    var playerCount = data.players.online;
-    document.getElementById('serverPlayerCount').innerHTML = playerCount;
+  async function serverCount(url){ 
+    const response = await fetch(url);  // fetch the url
+    var data = await response.json(); // parse the JSON
+    var playerCount = data.players.online; // get the online player count
+    document.getElementById('serverPlayerCount').innerHTML = playerCount; // display the player count
     }
-serverCount('https://api.minetools.eu/ping/164.132.219.131/25599');
-
-async function discordCount(url){
-  const response = await fetch(url);
-  var data = await response.json();
-  var userCount = data.presence_count;
-  document.getElementById('discordUserCount').innerHTML = userCount;  
+serverCount('https://api.minetools.eu/ping/164.132.219.131/25599'); // call the function
+ 
+async function discordCount(url){ 
+  const response = await fetch(url); // fetch the url
+  var data = await response.json(); // parse the JSON
+  var userCount = data.presence_count; // get the user count
+  document.getElementById('discordUserCount').innerHTML = userCount; // display the user count
   }
-discordCount('https://discord.com/api/guilds/938550305770057738/widget.json');
+discordCount('https://discord.com/api/guilds/938550305770057738/widget.json'); // call the function
+
+setTimeout(() =>{ // call the function after 5 seconds
+  document.body.className += ' loaded'; // add the class 'loaded' to the body
+})
+
+new Crate({ // create a new Crate
+  server: '938550305770057738', // AstroSMP 
+  channel: '939088708790022164' // #💬-general
+},1000)
