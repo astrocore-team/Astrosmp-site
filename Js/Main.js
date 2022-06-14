@@ -13,12 +13,3 @@ async function discordCount(url){
   document.getElementById('discordUserCount').innerHTML = userCount; // display the user count
   }
 discordCount('https://discord.com/api/guilds/938550305770057738/widget.json'); // call the function
-
-setTimeout(() =>{ // call the function after 5 seconds
-  document.body.className += ' loaded'; // add the class 'loaded' to the body
-})
-
-new Crate({ // create a new Crate
-  server: '938550305770057738', // AstroSMP 
-  channel: '939088708790022164' // #💬-general
-},1000)

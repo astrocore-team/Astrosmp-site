@@ -5,8 +5,12 @@
     <link rel="icon" class="favicon" type="image/jpg" href="Assets/Favicon.jpg">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="Css/voting.css">
+    <script>
+        setTimeout(() =>{ // call the function after 5 seconds
+            document.body.className += ' loaded'; // add the class 'loaded' to the body
+        },1000)
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="Js/Main.js"></script>
     <title>AstroSMP</title>
 </head>
 <body>
@@ -37,7 +41,7 @@
     <h3 class="subtitle">Please use the form below to vote and support AstroSMP!</h3>
     <div class="instructions">
         <h1 class="instructions-title">Instructions</h1>
-        <p class="instructions-text">Go to where it says <b>Minecraft Username</b> and input your Minecraft username. <b>Bedrock</b> players will need to add a dot infront of their Mc username, <b>Example: .McNoob15</b> after this Make sure to fill in the <b>Captcha,</b>Then click Vote for Server!</p>
+        <p class="instructions-text"><b style="color:#2BBD32;">Java Players:</b><br>-Input your username<br>-Complete the hCaptcha<br><b style="color:#2BBD32;">Bedrock Players:</b><br>-Input your username<br> <b>[Please include a "." infront]</b><br>Example: <b>.</b>McNoob15<br>-Complete the hCaptcha<br></p>
     </div>
     <div class="rewards">
         <h1 class="rewards-title">Rewards</h1>
