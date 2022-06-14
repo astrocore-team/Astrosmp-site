@@ -229,6 +229,7 @@ a {
         width:94vw;
         height:73vh;
         border-radius:8px;
+        -webkit-user-drag: none;
 }
 .column-element {
         position:absolute;
