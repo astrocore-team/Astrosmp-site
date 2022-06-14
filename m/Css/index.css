@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 :root {
-        --main-height: 200vh;
+        --main-height: 310vh;
       }
 body{
         height:var(--main-height);
@@ -206,7 +206,6 @@ a {
         font-size:1.3vw;
 }
 .map-block{
-        display:none;
         position:absolute;
         top:140vh;
         left: 50%;
@@ -227,10 +226,14 @@ a {
         border: 2px solid #2BBD32;
         border-right: 2.5px solid #2BBD32;
         user-select: none;
+        width:94vw;
+        height:73vh;
+        border-radius:8px;
+        -webkit-user-drag: none;
 }
 .column-element {
         position:absolute;
-        top:140vh;
+        top:225vh;
         left: 50%;
         -webkit-transform: translateX(-50%);
         transform: translateX(-50%);
@@ -359,12 +362,21 @@ iframe {
         width:94vw;
         height:73vh;
 }
+.Dynmap-image {
+        position:absolute;
+        border-radius:10px;
+        left:20px;
+        top:20px;
+        width:94vw;
+        height:73vh;
+        border: #2BBD32 solid 2px;
+}
 footer{
         position:absolute;
-        bottom:-175vh;
+        bottom:-260vh;
         left:0px;
         width:100vw;
-        height:40vh;
+        height:50vh;
         background-color:#10141c;
 }
 .footer-column-element {
@@ -423,6 +435,30 @@ footer{
         color:white;
         font-size:1.3vw;
 }
+.social-text-yt {
+        line-height: 1vh;
+        text-align:center;
+        color:#cc181e;
+        font-size:1.3vw;
+}
+.social-text-twitter {
+        line-height: 1vh;
+        text-align:center;
+        color:#00acee;
+        font-size:1.3vw;
+}
+.social-text-tiktok {
+        line-height: 1vh;
+        text-align:center;
+        color:#ff0050;
+        font-size:1.3vw;
+}
+.social-text-instagram {
+        line-height: 1vh;
+        text-align:center;
+        color:#c7e100;
+        font-size:1.3vw;
+}
 .support-title{
         text-align:left;
         position:absolute;
@@ -442,8 +478,9 @@ footer{
 }
 .support-shop-button{
         position:absolute;
+        margin-top: 30px;
         right:5vw;
-        top:28vh;
+        top:25vh;
         width:20vw;
         height: 20%;
         border-radius:15px;
