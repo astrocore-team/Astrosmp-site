@@ -334,8 +334,33 @@ footer{
     color:white;
     font-size:1.3vw;
 }
+.social-text-yt {
+    line-height: 1vh;
+    text-align:center;
+    color:#cc181e;
+    font-size:1.3vw;
+}
+.social-text-twitter {
+    line-height: 1vh;
+    text-align:center;
+    color:#00acee;
+    font-size:1.3vw;
+}
+.social-text-tiktok {
+    line-height: 1vh;
+    text-align:center;
+    color:#ff0050;
+    font-size:1.3vw;
+}
+.social-text-instagram {
+    line-height: 1vh;
+    text-align:center;
+    color:#c7e100;
+    font-size:1.3vw;
+}
 .support-shop-button{
     position:absolute;
+    margin-top: 30px;
     right:5vw;
     top:28vh;
     width:20vw;
