@@ -304,6 +304,17 @@ a {
         color:white;
         font-size:1.3vw;
 }
+.column-text-features {
+        position:absolute;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        width:25vw;
+        text-align:center;
+        top:56vh;
+        color:white;
+        font: size 1.2em;
+}
 .navbar-menu-wrapper {
         position:absolute;
         top:25%;
@@ -365,6 +376,13 @@ iframe {
         top:20px;
         width:94vw;
         height:73vh;
+        border: #2BBD32 solid 2px;
+}
+.Dynmap-image:hover {
+        transition: all 0.3s, box-shadow 0.3s ease-in-out;
+        -webkit-box-shadow:0px 0px 74px 35px rgba(43, 189, 50,0.93);
+        -moz-box-shadow: 0px 0px 74px 35px rgba(43, 189, 50,0.93);
+        box-shadow: 0px 0px 74px 35px rgba(43, 189, 50,0.93);
 }
 footer{
         position:absolute;
@@ -430,6 +448,30 @@ footer{
         color:white;
         font-size:1.3vw;
 }
+.social-text-yt {
+        line-height: 1vh;
+        text-align:center;
+        color:#cc181e;
+        font-size:1.3vw;
+}
+.social-text-twitter {
+        line-height: 1vh;
+        text-align:center;
+        color:#00acee;
+        font-size:1.3vw;
+}
+.social-text-tiktok {
+        line-height: 1vh;
+        text-align:center;
+        color:#ff0050;
+        font-size:1.3vw;
+}
+.social-text-instagram {
+        line-height: 1vh;
+        text-align:center;
+        color:#c7e100;
+        font-size:1.3vw;
+}
 .support-title{
         text-align:left;
         position:absolute;
@@ -449,6 +491,7 @@ footer{
 }
 .support-shop-button{
         position:absolute;
+        margin-top: 30px;
         right:5vw;
         top:28vh;
         width:20vw;
