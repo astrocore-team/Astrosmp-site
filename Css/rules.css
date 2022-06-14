@@ -204,7 +204,7 @@ a {
     width:75vw;
     height:20vh;
     text-align:left;
-    font-size:2vw;
+    font-size:1.9vw;
     background-color:rgb(47, 58, 75);
     padding:2vw;
     border-radius:8px;
@@ -248,7 +248,31 @@ a {
     width:60vw;
     height:145vh;
     color:white;
-    font-size:3.8vh;
+    font-size:2.7vh;
+}
+.social-text-yt {
+    line-height: 1vh;
+    text-align:center;
+    color:#cc181e;
+    font-size:1.3vw;
+}
+.social-text-twitter {
+    line-height: 1vh;
+    text-align:center;
+    color:#00acee;
+    font-size:1.3vw;
+}
+.social-text-tiktok {
+    line-height: 1vh;
+    text-align:center;
+    color:#ff0050;
+    font-size:1.3vw;
+}
+.social-text-instagram {
+    line-height: 1vh;
+    text-align:center;
+    color:#c7e100;
+    font-size:1.3vw;
 }
 .rules-wrapper{
     overflow:hidden;
@@ -348,6 +372,7 @@ footer{
 }
 .support-shop-button{
     position:absolute;
+    margin-top: 30px;
     right:5vw;
     top:28vh;
     width:20vw;
