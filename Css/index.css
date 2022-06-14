@@ -307,17 +307,6 @@ a {
         color:white;
         font-size:1.3vw;
 }
-.column-text-features {
-        position:absolute;
-        left: 50%;
-        -webkit-transform: translateX(-50%);
-        transform: translateX(-50%);
-        width:25vw;
-        text-align:center;
-        top:56vh;
-        color:white;
-        font: size 1.2em;
-}
 .navbar-menu-wrapper {
         position:absolute;
         top:25%;
