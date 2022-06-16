@@ -57,9 +57,9 @@ open = false;
 }
 function changeCss () {
 
-  this.scrollY > 5 ? document.getElementById("header").style.opacity = ".85" : document.getElementById("header").style.opacity = "0";
-  this.scrollY > 5 ? temp = true : temp = false;
-  this.scrollY > 5 ? document.getElementById("header1").style.height = "10.2%" : document.getElementById("header1").style.height = "15%";
-  this.scrollY > 5 ? document.getElementById('header-name').className = "header-name"  : document.getElementById('header-name').className = "header-name big"; 
+  this.scrollY > 0 ? document.getElementById("header").style.opacity = ".85" : document.getElementById("header").style.opacity = "0";
+  this.scrollY > 0 ? temp = true : temp = false;
+  this.scrollY > 0 ? document.getElementById("header1").style.height = "10.2%" : document.getElementById("header1").style.height = "15%";
+  this.scrollY > 0 ? document.getElementById('header-name').className = "header-name"  : document.getElementById('header-name').className = "header-name big"; 
 }
 window.addEventListener("scroll", changeCss , false);
