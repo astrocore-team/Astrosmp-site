@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 :root {
-        --main-height: 310vh;
+        --main-height: 300vh;
       }
 body{
         height:var(--main-height);
@@ -9,14 +9,13 @@ body{
         -ms-overflow-style: none;  /* IE and Edge */
         scrollbar-width: none;  /* Firefox */
         overflow-y: scroll;
-        overflow-x: hidden;
+        overflow-x: hidden !important;
         font-family: 'Open Sans', sans-serif;
         background: rgb(24,28,36);
         transition:all 1s;
         transition:all 1s;
         opacity:0;
         pointer-events: none;
-
 }
 
 body.loaded{
@@ -42,14 +41,14 @@ a {
         left:0px;
         top:0px;
         width:100vw;
-        height:60vh;
+        height:30vh;
         background: rgb(24,28,36);
         background: linear-gradient(360deg, rgba(24,28,36,1) 0%, rgba(24,28,36,0.8477766106442577) 33%, rgba(38,42,51,0.592874649859944) 95%);
 }
 .background-filter-2{
         position:absolute;
         left:0px;
-        top:60vh;
+        top:29.5vh;
         width:100vw;
         height:var(--main-height);               
         background: rgb(24, 28, 36);
@@ -58,116 +57,126 @@ a {
 .top-background{
         user-select: none;;
         position:absolute;
-        left:0px;
+        left:50%;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
         top:0px;
-        width:100vw;
-        height:60vh;
-}
-.discord-invite{
-        position:absolute;
-        top:30vh;
-        right:14vw;
-        color: #2BBD32;
-        height:10vh;
-        width:6vw;
-}
-
-.discord-count{
-        position:absolute;
-        top:-8vh;
-        left:50%;
-        -webkit-transform: translateX(-50%);
-        transform: translateX(-50%);
-        background-color:#2BBD32;
-        color:black;
-        width:4vw;
-        height:4vh;
-        text-align:center;
-        line-height: 4vh;
-        font-size:1.5vw;
-        font-weight: bold;
-        border-radius:15px;
-}
-.minecraft-invite{
-        position:absolute;
-        top:29vh;
-        left:10vw;
-        color: #2BBD32;
-        height:12vh;
-        width:12vh;
-}
-.minecraft-img{
-        height:12vh;
-        border-radius:15px;
-        cursor:pointer;    
-        position:absolute; 
-        left:50%;
-        -webkit-transform: translateX(-50%);
-        transform: translateX(-50%); 
-}
-
-.minecraft-count{
-        position:absolute;
-        top:-8vh;
-        left:50%;
-        -webkit-transform: translateX(-50%);
-        transform: translateX(-50%);
-        background-color:#2BBD32;
-        color:black;
-        width:4vw;
-        height:4vh;
-        text-align:center;
-        line-height: 4vh;
-        font-size:1.5vw;
-        font-weight: bold;
-        border-radius:15px;
-        animation: fadeIn linear 2s;
-        -webkit-animation: fadeIn linear 2s;
-        -moz-animation: fadeIn linear 2s;
-        -o-animation: fadeIn linear 2s;
-        -ms-animation: fadeIn linear 2s;
-}
-.discord-logo{
-        height:9.1185410334347vh;
-        width:6.038vw;
-        filter: invert(57%) sepia(95%) saturate(1465%) hue-rotate(77deg) brightness(94%) contrast(81%);
+        width:200vw;
+        height:30vh;
+        overflow:hidden;
 }
 .title{
         position:absolute;
-        top:10vh;
+        top:5vh;
         left: 50%;
         -webkit-transform: translateX(-50%);
         transform: translateX(-50%);
         color:white;
-        font-size:6vw;
+        font-size:15vw;
 }
-.navbar{
+.header{
+        position:fixed;
+        left: 0px;
+        top:0px;
+        width: 100vw;
+        height:15%;
+       z-index:5;
+       transition: height .6s;
+       }
+    .header1{
+        background-color:#121212;
         position:absolute;
-        left: 50%;
-        -webkit-transform: translateX(-50%);
-        transform: translateX(-50%);
-        top:55vh;
-        width:98vw;
-        height:18vh;
-        border-radius:8px;
-        background-color:rgb(47, 58, 75);
-}
-.navbar-selected{
-        border-bottom:.8vh solid #2BBD32 !important;
-        border-radius: .4vw;
-}
-.navbar-element:hover{
-        border-bottom:.8vh solid #2BBD32;
-        border-radius: .4vw;
-        transition: border 1s;
-}
+        left: 0px;
+        top: 0px;
+        width: 100vw;
+        height:100%;
+       opacity:0;
+       transition: opacity 0.5s;
+       }
+
+       .bar1, .bar2, .bar3 {
+        width: 35px;
+        height: 5px;
+        background-color: white;
+        margin: 6px 0;
+        transition: 0.4s;
+      }
+      
+      .change .bar1 {
+        user-select:none;
+        -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+        transform: rotate(-45deg) translate(-9px, 6px);
+      }
+      
+      .change .bar2 {opacity: 0;user-select:none;}
+      
+      .change .bar3 {
+        user-select:none;
+        -webkit-transform: rotate(45deg) translate(-8px, -8px);
+        transform: rotate(45deg) translate(-8px, -8px);
+      }
+      .menu-container{
+      position:absolute;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
+      right:50px;
+      transition: background-color 0.4s, box-shadow 0.3s ease-in-out;
+      cursor:pointer;
+      user-select:none;
+      }
+      .menu-wrapper{
+      position:fixed;
+      left:0px;
+      top:0px;
+      background-color:#4d4d4d;
+      width:100vw;
+      height:100vh;
+      visibility: hidden;
+      opacity:0;
+        transition: opacity 0.5s ease-in-out;
+        -webkit-transition: opacity 0.5s;
+      }
+      .header-name{
+        color: white;
+        position:absolute;
+        left:40px;
+        top: 50%;
+        font-size:10vw;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        text-align:center;
+        margin:0px;
+        padding:0px;
+        transition: all .6s;
+        }
+        .header-name.big{
+                color: white;
+                position:absolute;
+                left: 18vw;
+                top: 16vh;
+                font-size:15vw;
+                text-align:center;
+                margin:0px;
+                padding:0px;
+                }
+
+
+
+
+
+
+
+
+
+
 .big-block{
         position:absolute;
         left: 50%;
         -webkit-transform: translateX(-50%);
         transform: translateX(-50%);
-        top:76.5vh;
-        width:98vw;
+        top:29vh;
+        width:95vw;
         height:60vh;
         border-radius:8px;
         background-color:rgb(47, 58, 75);
@@ -175,44 +184,47 @@ a {
 }
 .about-image{
         object-fit: cover;
-        height:60vh;
-        width:55vw;
+        height:30vh;
+        width:98vw;
         position:absolute;
         top:0px;
         left:0px;
-        border-top-left-radius:8px;
-        border-bottom-left-radius:8px;
-        border-right: .4vw solid #2BBD32;
+        border-bottom: .4vw solid #2BBD32;
         cursor: pointer;
 }
 .about-title{
         cursor: pointer;
         position:absolute;
-        right: 0vw;
-        width:42vw;
-        text-align:center;
-        top:8vh;
-        color:#2BBD32;
-        font-size:2.5vw;
-        font-weight:bold;            
-}
-.about-text{
-        position:absolute;
-        right: 5vw;
-        width:32vw;
-        text-align:center;
-        top:20vh;
-        color:white;
-        font-size:1.3vw;
-}
-.map-block{
-        position:absolute;
-        top:140vh;
         left: 50%;
         -webkit-transform: translateX(-50%);
         transform: translateX(-50%);
-        width: 98vw;        
-        height:80vh;
+        width:60vw;
+        text-align:center;
+        top:27.5vh;
+        color:#2BBD32;
+        font-size:4vh;
+        font-weight:bold;  
+}
+.about-text{
+        position:absolute;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        width:85vw;
+        height:20vh;
+        text-align:center;
+        bottom:0vh;
+        color:white;
+        font-size:1.9vh;
+}
+.map-block{
+        position:absolute;
+        top:91vh;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        width: 95vw;        
+        height:25vh;
         border-radius: 8px;
         background-color:rgb(47, 58, 75);
 }
@@ -226,26 +238,25 @@ a {
         border: 2px solid #2BBD32;
         border-right: 2.5px solid #2BBD32;
         user-select: none;
-        width:94vw;
-        height:73vh;
+        width:90vw;
+        height:23vh;
         border-radius:8px;
         -webkit-user-drag: none;
 }
 .column-element {
         position:absolute;
-        top:225vh;
+        top:118vh;
         left: 50%;
         -webkit-transform: translateX(-50%);
         transform: translateX(-50%);
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         flex-wrap: wrap;
-        width: 98vw;      
+        width: 95vw;      
         border-radius:8px;
-        column-gap: 20px;
-        height:90vh;
+        row-gap: 20px;
+        height:180vh;
         border-radius: 8px;
-       
 }
       
 .column {
@@ -256,11 +267,6 @@ a {
         transition: all .4s;
         cursor:pointer;
 }
-.column:hover {
-        z-index:3 !important;
-        transition: margin-top .35s !important;
-        margin-top:-.8vh !important;
-}
 .glow:hover{
         -webkit-box-shadow:0px 0px 74px 35px rgba(43, 189, 50,0.43);
         -moz-box-shadow: 0px 0px 74px 35px rgba(43, 189, 50,0.43);
@@ -268,45 +274,38 @@ a {
 }
 .column-picture{
         object-fit: cover;
-        height:40vh;
+        height:25vh;
+        width:95vw;
         position:absolute;
-        top:0px;
+        top:-2vh;
         left: 50%;
         -webkit-transform: translateX(-50%);
         transform: translateX(-50%);
-}
-.horizontal-hr{
-        border: .4vh solid #2BBD32;
-        background-color:#2BBD32;
-        width:50vw;
-        position:absolute;
-        top:39vh;
-        left: 50%;
-        -webkit-transform: translateX(-50%);
-        transform: translateX(-50%);
+        border-bottom: .4vh solid #2BBD32;
 }
 .column-title{
+        cursor: pointer;
         position:absolute;
-        top:42vh;
         left: 50%;
         -webkit-transform: translateX(-50%);
         transform: translateX(-50%);
-        width:42vw;
+        width:50vw;
         text-align:center;
+        top:22vh;
         color:#2BBD32;
-        font-size:2.5vw;
-        font-weight:bold;    
+        font-size:9vw;
+        font-weight:bold; 
 }
 .column-text{
         position:absolute;
         left: 50%;
         -webkit-transform: translateX(-50%);
         transform: translateX(-50%);
-        width:25vw;
+        width:85vw;
         text-align:center;
-        top:56vh;
+        top:30vh;
         color:white;
-        font-size:1.3vw;
+        font-size:6vw;
 }
 .navbar-menu-wrapper {
         position:absolute;
@@ -373,10 +372,10 @@ iframe {
 }
 footer{
         position:absolute;
-        bottom:-260vh;
+        bottom:-240vh;
         left:0px;
         width:100vw;
-        height:50vh;
+        height:40vh;
         background-color:#10141c;
 }
 .footer-column-element {
@@ -465,28 +464,29 @@ footer{
         right:13.5vw;
         color:#2BBD32;
         font-size:2.3vw;
-        font-weight:bold;    
+        font-weight:bold;
 }
 .support-text{
         position:absolute;
         width:22vw;
         text-align:left;
-        top:12vh;
+        top:10vh;
         right:3vw;
         color:white;
         font-size:1.3vw;
 }
 .support-shop-button{
         position:absolute;
-        margin-top: 30px;
-        right:5vw;
-        top:25vh;
-        width:20vw;
-        height: 20%;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        top:28vh;
+        width:90vw;
+        height: 15%;
         border-radius:15px;
         background-color:#2BBD32;
         border:2px solid #2BBD32;
-        font-size:1.6vw;
+        font-size:5vw;
         color:white;
         transition: all 0.3s, box-shadow 0.3s ease-in-out;
         -webkit-box-shadow:0px 0px 74px 35px rgba(26, 116, 31,0.93);
