@@ -33,6 +33,7 @@ if (!open){
   window.addEventListener('keydown', preventDefaultForScrollKeys, false);
 document.getElementById("menu-wrapper").style.visibility = "visible";
 document.getElementById("menu-wrapper").style.opacity = "1";
+document.getElementById('header-name').className = "header-name";
 if (temp){
 document.getElementById("header").style.opacity = "0";
 document.getElementById("header1").style.height = "15%";
@@ -48,9 +49,11 @@ else if (open){
 
 document.getElementById("menu-wrapper").style.opacity = "0";
 document.getElementById("menu-wrapper").style.visibility = "hidden";
+
+document.getElementById('header-name').className = "header-name big";
 if (temp){
 document.getElementById("header").style.opacity = ".85";
-document.getElementById("header1").style.height = "10.2%"
+document.getElementById("header1").style.height = "10.2%";
 }
 open = false;
 }
