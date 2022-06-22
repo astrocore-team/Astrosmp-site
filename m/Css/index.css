@@ -3,6 +3,8 @@
         --main-height: 300vh;
       }
 body{
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
+        -webkit-tap-highlight-color: transparent;
         height:var(--main-height);
         padding:0px;
         margin:0px;
