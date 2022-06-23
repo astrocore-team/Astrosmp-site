@@ -231,6 +231,10 @@ a {
         font-size:2.5vh;
         color:white;
 }
+.about-text{
+
+        font-size:2.7vh;
+}
 .voting-button{
     position:absolute;
     left: 50%;

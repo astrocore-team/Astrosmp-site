@@ -1,107 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <link rel="icon" class="favicon" type="image/jpg" href="Assets/Favicon.jpg">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" class="favicon" type="image/jpg" href="..\Assets/Favicon.jpg">
     <link rel="stylesheet" href="Css\socials.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AstroSMP</title>
+    <script src="https://kit.fontawesome.com/f9d40dbe97.js" crossorigin="anonymous"></script>
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
     <script>
-        setTimeout(() =>{
-            document.body.className += ' loaded';
+        setTimeout(() =>{ // call the function after 5 seconds
+            document.body.className += ' loaded'; // add the class 'loaded' to the body
         },1000)
     </script>
-</head>
+    <script src="js\header.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"  content="width=device-width, initial-scale=1, minimum-scale=1">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <title>AstroSMP</title>
+    <header id="header1" class="header">
+        <div id="menu-wrapper" class="menu-wrapper">
+        <div class="menu-flexbox">
+            <a class="menu-element" onclick="document.body.className -= ' loaded';" href="index.html" style="cursor:pointer;">Home</a>
+            <a class="menu-element" onclick="document.body.className -= ' loaded';" href="about-us.html" style="cursor:pointer;">About Us</a>
+            <a class="menu-element" onclick="document.body.className -= ' loaded';" href="rules.html" style="cursor:pointer;">Rules</a>
+            <a class="menu-element" onclick="document.body.className -= ' loaded';" href="voting.html" style="cursor:pointer;">Voting</a>
+            <a class="menu-element" onclick="document.body.className -= ' loaded';" href="socials.html" style="cursor:pointer;">Socials</a>
+            <a class="menu-element" onclick="document.body.className -= ' loaded';" href="" style="cursor:pointer;">Shop</a>
+        </div>
+        </div>
+        
+        <div id="header" class="header1"></div>
+         <h1 id="header-name"class="header-name big">AstroSMP</h1> 
+        <div class="menu-container" onclick="myFunction(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        
+        </div>
+        
+        </header>
+        
+        
 <body>
-    <image class="top-background" src="Assets/background.png">
+    <image class="top-background" src="../Assets/background.png">
         <div class="background-filter-2"></div>
     <div class="background-filter"></div>
-    <h1 class="top-title">AstroSMP</h1>
-    <div class="navbar">
-        <div class="navbar-menu-wrapper">
-            <div class="navbar-element">
-                <a onclick="document.body.className -= ' loaded';" href="index.html" style="cursor:pointer;"><b>Home</b></a>
-            </div>
-            <div class="navbar-element">
-                <a onclick="document.body.className -= ' loaded';" href="rules.html" style="cursor:pointer;"><b>Rules</b></a>
-            </div>
-            <div class="navbar-element">
-                <a onclick="document.body.className -= ' loaded';" href="voting.html" style="cursor:pointer;"><b>Voting</b></a>
-            </div>
-            <div class="navbar-element navbar-selected">
-                <a onclick="document.body.className -= ' loaded';" href="socials.html" style="cursor:pointer;"><b>Socials</b></a>
-            </div>
-        </div>
-        <button class="shop-button">AstroSMP Shop</button>
-    </div>
-    <hr class="title-hr">
-    <h1 class="title">Socials</h1>
-    <hr class="title-hr-2">
-    <h3 class="subtitle">Keep up to day with all AstroSMP news.</u></h3>
 
-    <div class="rules-wrapper"> 
-   <div class="instructions">
-        <p class="instructions-text">Please respect and follow all rules. Failure to will result in <u style="color:#2BBD32;cursor:pointer">punishment.</u> These rules apply to all members of AstroSMP regardless of their role. If you find someone breaking the rules please report them in our Discord "🚨report-a-user" channel. We want to provide all players with the most fair, fun, and safe experience for all.</u></p>
-    </div>
-    <div class="rules">
-        <h3 style="color:#2BBD32">Global Rules:</h3>
-        1.
-        <br>
-        2.
-        <br>
-        3.
-        <br>
-        4.
-        <br>
-        5.
-        <h3 style="color:#2BBD32">Survival Rules:</h3>
-        1.
-        <br>
-        2.
-        <br>
-        3.
-        <br>
-        4.
-        <br>
-        5.
-        <h3 style="color:#2BBD32">Chat Rules:</h3>
-        1.
-        <br>
-        2.
-        <br>
-        3.
-        <br>
-        4.
-        <br>
-        5.
-        <br>
-        <h3 style="width:80vw;">Thanks for keeping AstroSMP a safe and welcome spafe for everyone :)</h3>
-    </div>
-</div>
-<footer>
-    <div class="footer-column-element">
-        <div class="footer-column">
-            <p class="story-title">Our Story</p>
-            <p class="story-text">This is a bunch of random text that I am using as a placeholder. Please replace this text with a paragraph length-ish of text. It gets really boring typing this all out.</p>
-        </div>
-        <div class="footer-column">
-            <p class="social-title">Social Links</p>
+    <div class="big-block">
+        <img class="voting-image" src="../Assets\socials.png">
+        <p class="voting-title">Socials</p>
+        <div class="social-text">
+            <img style="width:20vw; height:6vh; filter: invert(57%) sepia(95%) saturate(1465%) hue-rotate(77deg) brightness(94%) contrast(81%);" src="..\Assets\youtube.svg"><a href="https://www.youtube.com/channel/UCGBBzD2HCng9NE09_6iaUVQ"><p class="social-text-yt"><span style="cursor:pointer;">Youtube</span></p></a>
             <hr class="social-hr">
-            <p onclick="window.location.replace('404.html')" class="social-text"><span style="cursor:pointer;">Youtube</span></p>
+            <img class="socials-flex-element" style="width:20vw; height:6vh; filter: invert(57%) sepia(95%) saturate(1465%) hue-rotate(77deg) brightness(94%) contrast(81%);" src="..\Assets\twitter.svg"><a href="https://twitter.com/astrosmp2"><p class="social-text-twitter"><span style="cursor:pointer;">Twitter</span></p></a>
             <hr class="social-hr">
-            <p onclick="window.location.replace('404.html')" class="social-text"><span style="cursor:pointer;">Twitter</span></p>
+            <img class="socials-flex-element" style="width:20vw; height:5vh; top: .5; bottom: .5; filter: invert(57%) sepia(95%) saturate(1465%) hue-rotate(77deg) brightness(94%) contrast(81%);" src="..\Assets\tiktok.svg"> <a href="https://www.tiktok.com/@astrocore.smp"><p class="social-text-tiktok"><span style="cursor:pointer;">Tiktok</span></p></a>
             <hr class="social-hr">
-            <p onclick="window.location.replace('404.html')" class="social-text"><span style="cursor:pointer;">Tiktok</span></p>
-            <hr class="social-hr">
-            <p onclick="window.location.replace('404.html')" class="social-text"><span style="cursor:pointer;">Instagram</span></p>
-        </div>
-        <div class="footer-column">
-            <p class="support-title">Support Us</p>
-            <button class="support-shop-button">AstroSMP Shop</button>
-            <p class="support-text">This is a bunch of random text that I am using as a placeholder. It gets really boring typing this all out.</p>
+            <img class="socials-flex-element" style="width:20vw; height:6vh; filter: invert(57%) sepia(95%) saturate(1465%) hue-rotate(77deg) brightness(94%) contrast(81%);" src="..\Assets\instagram.svg"><a href="https://www.instagram.com/astrosmpofficial/"><p class="social-text-instagram"><span style="cursor:pointer;">Instagram</span></p></a>
         </div>
     </div>
+    <footer>
+        <div class="footer-green-line"></div>
+        <p class="copyright">&copy; AstroSMP 2022</p>
+        <div class="socials">
+        <img class="socials-flex-element" style="width:20vw; height:6vh; filter: invert(57%) sepia(95%) saturate(1465%) hue-rotate(77deg) brightness(94%) contrast(81%);" src="..\Assets\youtube.svg">
+        <img class="socials-flex-element" style="width:20vw; height:6vh; filter: invert(57%) sepia(95%) saturate(1465%) hue-rotate(77deg) brightness(94%) contrast(81%);" src="..\Assets\twitter.svg">
+        <img class="socials-flex-element" style="width:20vw; height:5vh; top: .5; bottom: .5; filter: invert(57%) sepia(95%) saturate(1465%) hue-rotate(77deg) brightness(94%) contrast(81%);" src="..\Assets\tiktok.svg"> 
+        <img class="socials-flex-element" style="width:20vw; height:6vh; filter: invert(57%) sepia(95%) saturate(1465%) hue-rotate(77deg) brightness(94%) contrast(81%);" src="..\Assets\instagram.svg">
+        </div>
     </footer>
 </body>
 </html>
