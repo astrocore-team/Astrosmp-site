@@ -142,7 +142,7 @@ a {
       .menu-flexbox {
         position:absolute;
         left: 50%;
-        top:20vh;
+        top:18vh;
         -webkit-transform: translateX(-50%);
         transform: translateX(-50%);
         display: flex;
