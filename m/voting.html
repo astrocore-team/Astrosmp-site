@@ -1,78 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <link rel="icon" class="favicon" type="image/jpg" href="Assets/Favicon.jpg">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" class="favicon" type="image/jpg" href="..\Assets/Favicon.jpg">
     <link rel="stylesheet" href="Css/voting.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AstroSMP</title>
+    <script src="https://kit.fontawesome.com/f9d40dbe97.js" crossorigin="anonymous"></script>
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
     <script>
-        setTimeout(() =>{
-            document.body.className += ' loaded';
+        setTimeout(() =>{ // call the function after 5 seconds
+            document.body.className += ' loaded'; // add the class 'loaded' to the body
         },1000)
     </script>
-</head>
+    <script src="js\header.js"></script>
+    <script src='https://cdn.jsdelivr.net/npm/@widgetbot/crate@3' async defer>
+        new Crate({
+            server: '938550305770057738', // AstroSMP
+            channel: '939088708790022164' // #💬-general
+        },1000)
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"  content="width=device-width, initial-scale=1, minimum-scale=1">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <title>AstroSMP</title>
+    <header id="header1" class="header">
+        <div id="menu-wrapper" class="menu-wrapper">
+        <div class="menu-flexbox">
+            <a class="menu-element" onclick="document.body.className -= ' loaded';" href="index.html" style="cursor:pointer;">Home</a>
+            <a class="menu-element" onclick="document.body.className -= ' loaded';" href="rules.html" style="cursor:pointer;">Rules</a>
+            <a class="menu-element" onclick="document.body.className -= ' loaded';" href="voting.html" style="cursor:pointer;">Voting</a>
+            <a class="menu-element" onclick="document.body.className -= ' loaded';" href="socials.html" style="cursor:pointer;">Socials</a>
+    </div>
+        </div>
+        
+        <div id="header" class="header1"></div>
+         <h1 id="header-name"class="header-name big">AstroSMP</h1> 
+        <div class="menu-container" onclick="myFunction(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        
+        </div>
+        
+        </header>
+        
+        
 <body>
-    <image class="top-background" src="Assets/background.png">
+    <image class="top-background" src="../Assets/background.png">
         <div class="background-filter-2"></div>
     <div class="background-filter"></div>
-    <h1 class="top-title">AstroSMP</h1>
-    <div class="navbar">
-        <div class="navbar-menu-wrapper">
-            <div class="navbar-element">
-                <a onclick="document.body.className -= ' loaded';" href="index.html" style="cursor:pointer;"><b>Home</b></a>
-            </div>
-            <div class="navbar-element">
-                <a onclick="document.body.className -= ' loaded';" href="rules.html" style="cursor:pointer;"><b>Rules</b></a>
-            </div>
-            <div class="navbar-element navbar-selected">
-                <a onclick="document.body.className -= ' loaded';" href="voting.html" style="cursor:pointer;"><b>Voting</b></a>
-            </div>
-            <div class="navbar-element">
-                <a onclick="document.body.className -= ' loaded';" href="socials.html" style="cursor:pointer;"><b>Socials</b></a>
-            </div>
+
+    <div class="big-block">
+        <img class="voting-image" src="../Assets\voting.png">
+        <p class="voting-title">Rules</p>
+        <div class="voting-text">
+            <p>
+                <h3 style="color:#2BBD32">Instructions:</h3>
+                <b style="color:#2BBD32;">Java Players:</b><br>-Input your username<br>-Complete the hCaptcha<br><b style="color:#2BBD32;">Bedrock Players:</b><br>-Input your username<br> <b>[Please include a "." infront]</b><br>Example: <b>.</b>McNoob15<br>-Complete the hCaptcha
+                <h3 style="color:#2BBD32">Rewards:</h3>
+                - Vote Crate Key<br>
+                - 500+ Claim blocks<br>
+                - 5 Diamonds<br>
+                <button onclick="window.location.replace('https:/\/minecraftservers.org/vote/637069');" class="voting-button">Vote for AstroSMP</button>
+            </p>
         </div>
-        <button class="shop-button">AstroSMP Shop</button>
     </div>
-    <hr class="title-hr">
-    <h1 class="title">Voting</h1>
-    <hr class="title-hr-2">
-    <h3 class="subtitle">Please use the form below to vote and support AstroSMP!</h3>
-    <div class="instructions">
-        <h1 class="instructions-title">Instructions</h1>
-        <p class="instructions-text">Go to where it says <b>Minecraft Username</b> and input your Minecraft username. <b>Bedrock</b> players will need to add a dot infront of their Mc username, <b>Example: .McNoob15</b> after this Make sure to fill in the <b>Captcha,</b>Then click Vote for Server!</p>
-    </div>
-    <div class="rewards">
-        <h1 class="rewards-title">Rewards</h1>
-        <p class="rewards-text">
-            - Vote Crate Key<br>
-            - 500+ Claim blocks<br>
-            - 5 Diamonds<br>
-        </p>
-    </div>
-    <iframe onload="test()" id="vote" class="voting" src="https://minecraftservers.org/vote/637069" scrolling="no"></iframe>
+
     <footer>
         <div class="footer-column-element">
             <div class="footer-column">
-                <p class="story-title">Our Story</p>
-                <p class="story-text">This is a bunch of random text that I am using as a placeholder. Please replace this text with a paragraph length-ish of text. It gets really boring typing this all out.</p>
+                <a href="https://astrocore.net"><p class="story-title">Our Story</p></a>
+                <p class="story-text">AstroSMP is a Smp made by the Developer Organisation Astrocore! We are a Developer Group that make Websites and game servers! we are trying to make games currently</p>
             </div>
             <div class="footer-column">
                 <p class="social-title">Social Links</p>
                 <hr class="social-hr">
-                <p onclick="window.location.replace('404.html')" class="social-text"><span style="cursor:pointer;">Youtube</span></p>
+                <a href="https://www.youtube.com/channel/UCGBBzD2HCng9NE09_6iaUVQ"><p class="social-text-yt"><span style="cursor:pointer;">Youtube</span></p></a>
                 <hr class="social-hr">
-                <p onclick="window.location.replace('404.html')" class="social-text"><span style="cursor:pointer;">Twitter</span></p>
+                <a href="https://twitter.com/astrosmp2"><p class="social-text-twitter"><span style="cursor:pointer;">Twitter</span></p></a>
                 <hr class="social-hr">
-                <p onclick="window.location.replace('404.html')" class="social-text"><span style="cursor:pointer;">Tiktok</span></p>
+                <a href="https://www.tiktok.com/@astrocore.smp"><p class="social-text-tiktok"><span style="cursor:pointer;">Tiktok</span></p></a>
                 <hr class="social-hr">
-                <p onclick="window.location.replace('404.html')" class="social-text"><span style="cursor:pointer;">Instagram</span></p>
+                <a href="https://www.instagram.com/astrosmpofficial/"><p class="social-text-instagram"><span style="cursor:pointer;">Instagram</span></p></a>
             </div>
             <div class="footer-column">
                 <p class="support-title">Support Us</p>
                 <button class="support-shop-button">AstroSMP Shop</button>
-                <p class="support-text">This is a bunch of random text that I am using as a placeholder. It gets really boring typing this all out.</p>
+                <p class="support-text">This server runs on your donations! Help fund us in order to make this server a better place for everyone!</p>
             </div>
         </div>
         </footer>
