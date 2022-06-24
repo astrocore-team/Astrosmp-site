@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 :root {
-        --main-height: 102vh;
+        --main-height: 122vh;
       }
 body{
         -webkit-tap-highlight-color: rgba(0,0,0,0);
@@ -192,7 +192,7 @@ a {
         transform: translateX(-50%);
         top:29vh;
         width:95vw;
-        height:110vh;
+        height:130vh;
         border-radius:8px;
         background-color:rgb(47, 58, 75);
         overflow: hidden;
@@ -234,17 +234,9 @@ a {
         transform: translateX(-50%);
         top:40vh;
 }
-
-
-
-
-
-
-
-
 footer{
         position:absolute;
-        bottom:-70vh;
+        bottom:-90vh;
         left:0px;
         width:100vw;
         height:15vh;
