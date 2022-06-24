@@ -150,7 +150,7 @@ a {
         flex-direction: column;
         flex-wrap: wrap;
         width: 100vw;
-        height:80vh;
+        height:70vh;
 }
       
 .menu-element {
@@ -241,7 +241,7 @@ a {
         text-align:center;
         bottom:0vh;
         color:white;
-        font-size:1.9vh;
+        font-size:2.5vh;
 }
 .map-block{
         position:absolute;
@@ -334,6 +334,7 @@ a {
         top:30vh;
         color:white;
         word-wrap: break-word;
+        font-size: 2.5vh;
 }
 .navbar-menu-wrapper {
         position:absolute;
