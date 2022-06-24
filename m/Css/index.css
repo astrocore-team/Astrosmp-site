@@ -6,6 +6,7 @@ body{
         -webkit-tap-highlight-color: rgba(0,0,0,0);
         -webkit-tap-highlight-color: transparent;
         height:var(--main-height);
+        height: calc(var(--vh, 1vh) * var(--main-height));
         padding:0px;
         margin:0px;
         -ms-overflow-style: none;  /* IE and Edge */
