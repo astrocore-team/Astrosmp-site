@@ -149,7 +149,7 @@ a {
         flex-direction: column;
         flex-wrap: wrap;
         width: 100vw;
-        height:80vh;
+        height:70vh;
 }
       
 .menu-element {
@@ -283,6 +283,7 @@ footer{
         text-align: center;
         color: white;
 }
+
 .socials{
         height:8vh;
         width:100vw;

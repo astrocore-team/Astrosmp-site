@@ -426,38 +426,16 @@ footer{
 }
 .social-hr{
         width:10vw;
-        border-color: #303c4c;
-        line-height: 1vh;
+        border:.1 solid;
+        border-color: white;
+        line-height: 2vh;
 }
 .social-text{
-        line-height: 1vh;
+        line-height: 1.5vh;
         text-align:center;
-        color:white;
+        color:#2BBD32;
         font-size:1.3vw;
-}
-.social-text-yt {
-        line-height: 1vh;
-        text-align:center;
-        color:#cc181e;
-        font-size:1.3vw;
-}
-.social-text-twitter {
-        line-height: 1vh;
-        text-align:center;
-        color:#00acee;
-        font-size:1.3vw;
-}
-.social-text-tiktok {
-        line-height: 1vh;
-        text-align:center;
-        color:#ff0050;
-        font-size:1.3vw;
-}
-.social-text-instagram {
-        line-height: 1vh;
-        text-align:center;
-        color:#c7e100;
-        font-size:1.3vw;
+        text-align: center;
 }
 .support-title{
         text-align:left;

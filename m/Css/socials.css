@@ -149,7 +149,7 @@ a {
         flex-direction: column;
         flex-wrap: wrap;
         width: 100vw;
-        height:80vh;
+        height:70vh;
 }
       
 .menu-element {
@@ -220,9 +220,6 @@ a {
         font-size:4vh;
         font-weight:bold;  
 }
-
-
-
 .social-text{
         line-height: 1vh;
         text-align:center;
