@@ -57,6 +57,14 @@ a {
         background: rgb(24, 28, 36);
       
 }
+.top-background-div{
+width:100vw;
+position:absolute;
+top:0px
+left:0px;
+height:30vg;
+overflow:hidden;
+}
 .top-background{
         user-select: none;;
         position:absolute;
