@@ -55,15 +55,14 @@ a {
         width:100vw;
         height:var(--main-height);               
         background: rgb(24, 28, 36);
-      
 }
 .top-background-div{
-width:100vw;
-position:absolute;
-top:0px;
-left:0px;
-height:30vh;
-overflow:hidden;
+        width:100vw;
+        position:absolute;
+        top:0px;
+        left:0px;
+        height:30vh;
+        overflow:hidden;
 }
 .top-background{
         user-select: none;;
