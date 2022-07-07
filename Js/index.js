@@ -13,3 +13,18 @@ async function discordCount(url){
   document.getElementById('discordUserCount').innerHTML = userCount; // display the user count
   }
 discordCount('https://discord.com/api/guilds/938550305770057738/widget.json'); // call the function
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+console.log('Whoa, you saw the creeper and the discord logo have different colors? Impressive!');
